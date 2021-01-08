@@ -12,20 +12,17 @@
     text-align: center;
     padding: 2em 2em;
     
-    background-color:#000000;
-
+    background-color: black;
   }
   footer{
     text-align: center;
-    margin: 0;
+    padding: 1em 1em;
     color: white;
     background-color: black;
      font-family: Arial, Helvetica, sans-serif;
   }
-  
 </style>
  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAk5OTAMfHxwD7+/sARkZGABsbGwAkJCQAAgICAJWVlQD9/f0A0tLSAB0dHQA4ODgA////ANTU1ADm5uYA7+/vAKKiogAhISEA39/fAOjo6AAqKioA+vr6AOrq6gABAQEAlJSUAMjIyADR0dEAJSUlAFlZWQADAwMA/v7+ANPT0wDc3NwAW1tbAAUFBQCYmJgAkZGRACIiIgDp6ekAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANCQAAAAAAAAAAAAAAAAAADSIAAAAAAAAAAAAAAAAAFB8NBQAAAAAAAAAAAAAADQAAHh4WAAAAAAAAAAAADQcNDQ0NIxgAAAAAAAAAAAICJyETDQASAAAAAAAAAAAOGyUCAg0AJgAAAAAAAAAAEyAdBBENABwAAAAAAAAAGBcKDAYGJAANBwAAAAAAAAAACgsHBwgAAAAAAAAAAAAAACAHAAAZAAAAAAAAAAAAAAAQAAAAARgAAAAAAAAAAAAAABUAABoAAAAAAAAAAAAAAAADIA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   <!--<link rel="shortcut icon" type="image/x-icon" href="Images/pp.jpg" /> -->
 
 
@@ -57,40 +54,30 @@
         <label>Name</label>
         <input class="w3-input w3-border" type="text"  id="name" required name="entry.1634266918">
       </div>
+
       <div class="w3-section">
         <label>Email</label>
         <input class="w3-input w3-border" type="text"  id="email" required name="entry.351860930">
       </div>
-      
+
       <div class="w3-section">
-  <div >
- <!-- <label>Organization</label><br>
-  
-  <label for="male">School</label><br>
-  <input class="w3-input w3-border" type="radio" id="school" name="Organization" value="school" required name="entry.614209932">
-  <input type="radio" id="female" name="Organization" value="College" required name="entry.614209932">
-  <label for="female">College</label><br>
-  
-  <label for="other">Other</label>
-  <input type="text" id="other" name="Organization"  required name="entry.614209932">
+        <label>School / College Name</label>
+        <input class="w3-input w3-border" type="text" id="collegename" required name="entry.614209932">
       </div>
 
-  <input type="radio" id="male" name="gender" value="male"  required name="entry.614209932">
-<label for="male">School</label><br>
-<input type="radio" id="female" name="gender" value="female"  required name="entry.614209932">
-<label for="female">College</label><br>
-<input type="radio" id="other" name="gender" value="other">
-<label for="other">Other</label>
       <div class="w3-section">
         <label>Phone</label>
         <input class="w3-input w3-border" type="text"  id="phone" required name="entry.415775771">
       </div>
-            -->
+            
       <div class="w3-section">
-        <label> Drive link for the image</label>
+        <label>Post your photograph as google drive link </label>
         <input class="w3-input w3-border" type="text" id="drivelink" required name="entry.25717">
       </div>
 
+      
+      
+      
       <div class="w3-section">
         <button class="w3-button w3-block w3-black w3-margin-bottom" type="submit">SUBMIT</button>
       </div>
@@ -131,12 +118,6 @@
 
           }
 
-          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-            alert("Please enter a correct email address") ;//Validation Message
-            return false;
-
-          }
-
           return true;
 
         }
@@ -156,10 +137,8 @@
         </script>
 
 <!-- End Contact Section -->
-            
-      <footer>
+          <footer>
         &#169 All copyrights reserved
-      </footer>
-      
+      </footer>   
 </body>
 </html>
